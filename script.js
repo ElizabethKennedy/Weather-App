@@ -54,6 +54,7 @@ let weather = {
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " " + this.mileOrMeter[this.cur];
       document.querySelector(".weather").classList.remove("loading");
+      document.body.style.backgroundImage =("");
     },
     search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
@@ -89,4 +90,4 @@ let weather = {
       }
     });
   
-  weather.fetchWeather("Marina del Rey");
+  weather.fetchWeather("Manhattan Beach");
