@@ -54,7 +54,6 @@ let weather = {
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " " + this.mileOrMeter[this.cur];
       document.querySelector(".weather").classList.remove("loading");
-      document.body.style.backgroundImage ="(url=https://github.com/ElizabethKennedy/Weather-App/tree/main')"
     },
     search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
