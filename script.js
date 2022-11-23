@@ -4,7 +4,7 @@ let weather = {
     celOrFah: ["F", "C"],
     unit: ["imperial", "metric"],
     apiKey: "2a880f92df617e69a1d7cb92c3da66cf",
-    fetchWeather: function (city) {
+    fetchWeather: function (city, state) {
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${
           this.unit[this.cur]
@@ -25,7 +25,7 @@ let weather = {
       const { icon, description } = data.weather[0];
       const { temp, humidity, temp_min, temp_max, feels_like } = data.main;
       const { speed } = data.wind;
-      document.querySelector(".city").innerText =
+      document.querySelector(".city", ".state").innerText =
         "Weather in " + name + " " + country;
       document.querySelector(".temp").innerText = temp + "°";
   
