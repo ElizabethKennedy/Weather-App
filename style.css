@@ -16,6 +16,7 @@ body {
   .card {
     display:center;
     background: palevioletred;
+    box-shadow:5px #66cccc;
     color: inherit;
     padding: 2em;
     border-radius: 30px;
