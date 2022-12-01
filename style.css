@@ -28,11 +28,11 @@ body {
 
   .search {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     color:inherit;
   }
-  
+
   button {
     margin: 0.5em;
     border-radius: 50%;
@@ -45,7 +45,7 @@ body {
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
-  
+
   input.search-bar {
     border: none;
     outline: none;
@@ -57,32 +57,32 @@ body {
     font-size: 105%;
     width: calc(100% - 100px);
   }
-  
+
   button:hover {
     background: #7c7c7c6b;
   }
-  
+
   h1.temp {
     margin: 0;
     margin-bottom: 0.4em;
   }
-  
+
   .flex {
     display: flex;
     align-items: center;
   }
-  
+
   .description {
     text-transform: capitalize;
     margin-left: 8px;
   }
-  
+
   .weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
   }
-  
+
   .weather.loading:after {
     visibility: visible;
     content: "Loading...";
@@ -91,4 +91,7 @@ body {
     top: 0;
     left: 20px;
   }
- 
+
+  .animate-bottom {
+    font-family: 'Cream Cake', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
